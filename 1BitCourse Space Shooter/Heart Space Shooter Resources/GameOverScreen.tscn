@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Heart Space Shooter Resources/PixelFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://GameOverScreen.gd" type="Script" id=2]
+[ext_resource path="res://StarParticles.tscn" type="PackedScene" id=3]
+
+[node name="GameOverScreen" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Particles2D" parent="." instance=ExtResource( 3 )]
+
+[node name="GameOverLabel" type="Label" parent="."]
+margin_left = 101.0
+margin_top = 53.0
+margin_right = 141.0
+margin_bottom = 67.0
+rect_scale = Vector2( 3, 3 )
+custom_fonts/font = ExtResource( 1 )
+text = "GAME OVER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HiScoreLabel" type="Label" parent="."]
+margin_left = 136.0
+margin_top = 100.0
+margin_right = 181.0
+margin_bottom = 114.0
+custom_fonts/font = ExtResource( 1 )
+text = "HI SCORE: 0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EscapeLabel2" type="Label" parent="."]
+margin_left = 84.0
+margin_top = 157.0
+margin_right = 230.0
+margin_bottom = 171.0
+custom_fonts/font = ExtResource( 1 )
+text = "PRESS ESC TO RETURN TO TITLE SCREEN"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

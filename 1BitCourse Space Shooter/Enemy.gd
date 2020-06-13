@@ -2,7 +2,7 @@ extends Area2D
 
 const ExplosionEffect = preload("res://ExplosionEffect.tscn")
 
-export(int) var SPEED = 20
+export(int) var SPEED = floor(rand_range(15, 30))
 export(int) var ARMOR = 3
 
 signal score_up

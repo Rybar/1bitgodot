@@ -16,8 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="1BitCourse Space Shooter"
-run/main_scene="res://World.tscn"
+run/main_scene="res://StartMenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Music="*res://Music.tscn"
+SaveAndLoad="*res://SaveAndLoad.gd"
 
 [display]
 
